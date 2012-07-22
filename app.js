@@ -19,7 +19,7 @@ var access_logfile = fs.createWriteStream('./logs/access.log', {flags: 'a'});
 
 
 app.configure(function(){
-  app.set('port', process.env.PORT || 3000);
+  app.set('port', process.env.PORT || 8080);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'ejs'); // using ejs templating engine
 
@@ -172,7 +172,7 @@ function generateAdminId(){
         text += possible.charAt(Math.floor(Math.random() * possible.length));
     return text;
 }
-/////////////////////////////////// Listen on 3000 ////////////////////////////////////////////////////////////
+/////////////////////////////////// Listen on 8080 ////////////////////////////////////////////////////////////
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
