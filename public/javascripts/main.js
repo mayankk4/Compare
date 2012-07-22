@@ -76,7 +76,7 @@ function addCurrentImageToPreviouslyViewed(){
 }
 
 function openTabForCDN(id){
-	var url = "http://localhost:3000/images-cdn/"+id+".jpg";
+	var url = "/images-cdn/"+id+".jpg";
 	window.open(url,'_blank');
 	window.focus();
 }

@@ -36,6 +36,7 @@ Useful commands -
 	forver list
 	forever stopall
 
+[ Note : if you started forever as superuser then you need to be a superuser to stopall / list ]
 
 Hashing the filenames -
 
