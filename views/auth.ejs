@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  	<title><%-title %></title>
+    <link rel='stylesheet' type='text/css' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="/javascripts/jquery.js"></script>
+
+    <script type="text/javascript" src="/javascripts/jquery.noty.js"></script>
+    <script type="text/javascript" src="/javascripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/jquery.noty.css"/>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/noty_theme_default.css"/>
+  
+  </head>
+  
+  <body>
+
+  	<div>
+      <br>
+      <br>
+	  	<h1>A D M I N  -  L O G I N</h1>
+
+      <a href="/">Home</a><br><hr><br>
+
+      <input id="username" placeholder="username" type="text" />
+      <input id="password" placeholder="password" type="password" />
+
+      <input type="button" value="LOGIN" onclick="login();">
+  	</div>
+
+
+    <script type="text/javascript">
+          function login(){
+            $.post("/login", 
+                  { username: $("#username").val() , password: $("#password").val() }
+                ).success(function(data) {
+                    window.location = data;
+                });;
+          }
+    </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

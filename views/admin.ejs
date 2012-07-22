@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  	<title><%-title %></title>
+    <link rel='stylesheet' type='text/css' href='/stylesheets/style.css' />
+  	<script type="text/javascript" src="/javascripts/jquery.js"></script>
+  </head>
+  
+  <body>
+      <br>
+      <br>
+	  	<h1>A D M I N  -  P A N E L</h1>
+        <a href="/">Home</a> &nbsp;&nbsp;&nbsp; <input type="button" value="logout" onclick="logout();" />
+        <hr>
+
+
+	  	<script type="text/javascript">
+	  		function logout(){
+	            $.get("/logout").success(function(data) {
+       								window.location = data;
+							    });
+	  		}
+	  	</script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

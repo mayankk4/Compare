@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  	<title><%-title %></title>
+    <link rel='stylesheet' type='text/css' href='/stylesheets/style.css' />
+	<script type="text/javascript" src="/javascripts/jquery.js"></script>
+
+	<script type="text/javascript" src="/javascripts/jquery.noty.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/jquery.noty.css"/>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/noty_theme_default.css"/>
+
+	<script type="text/javascript" src="/javascripts/main.js"></script>
+
+  </head>
+  
+  <body>
+  	<div>
+	  	<h1>C O M P A R 3 : Lefty or Righty</h1>
+      <input type="button" value="Refresh Images" onclick="refreshImages();" /> &nbsp;&nbsp;&nbsp;
+      <a href="/admin">Admin</a>
+  	</div>
+
+  	<hr>  		
+
+  	<div>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  		<span>
+	  		<input type="button" value=" L E F T Y " onclick="voteForLeft();" />
+	  	</span>
+
+  		<span>
+	  		<a id="enlarge-left-image" href="" target="_blank">View Enlarged Version</a>
+	  	</span>
+
+	  	<span>
+	  		Current votes: 
+	  	</span>
+  		<span id="left-votes">
+	  	</span>
+
+	  	<span>
+	  		Current views: 
+	  	</span>
+  		<span id="left-views">
+	  	</span>
+
+  		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  		<span>
+	  		<input type="button" value=" R I G H T Y " onclick="voteForRight();" />
+	  	</span>
+
+  		<span>
+	  		<a id="enlarge-right-image" href="" target="_blank">View Enlarged Version</a>
+	  	</span>
+
+	  	<span>
+	  		Current votes: 
+	  	</span>
+      <span id="right-votes">
+      </span>
+
+	  	<span>
+	  		Current views: 
+	  	</span>
+  		<span id="right-views">
+	  	</span>
+  	</div>
+
+
+
+
+  	<hr>
+
+
+
+  	<div>
+  		<span id="firstImage" style="padding:120px;"> </span>
+  		&nbsp;
+  		&nbsp;
+  		&nbsp;
+  		&nbsp;
+  		&nbsp;
+  		<span id="secondImage"> </span>
+  	</div>
+
+
+
+    <hr>
+      <h1>Previously Viewed Images <input type="button" value="Clear" onclick="$('#previous-images').html('');" /></h1>
+    <hr>
+
+
+    <div id ="previous-images">
+
+    </div>
+
+    <hr>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
